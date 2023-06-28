@@ -35,10 +35,10 @@ curve.sample_size = 40
 curve.evaluate()
 
 # Draw the control point polygon and the evaluated curve
-vis_comp = VisMPL.VisCurve3D()
+vis_comp = VisMPL.VisCurve2D()
 curve.vis = vis_comp
 
 # Don't pop up the plot window, instead save it as a PDF file
-curve.render(filename="bezier.pdf", plot=False)
+curve.render(filename="bezier.pdf", plot=True)
 
 pass

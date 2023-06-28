@@ -26,7 +26,7 @@ surf.degree_u = 3
 surf.degree_v = 3
 
 # Set control points
-surf.set_ctrlpts(*exchange.import_txt("ex_surface02.cpt", two_dimensional=True))
+surf.ctrlpts = exchange.import_txt("ex_surface02.cpt", two_dimensional=False)
 
 # Set knot vectors
 surf.knotvector_u = utilities.generate_knot_vector(surf.degree_u, 6)
@@ -48,5 +48,6 @@ uv = [0.2, 0.9]
 surf_tangent = operations.tangent(surf, uv)
 surf_normal = operations.normal(surf, uv)
 
+exchange.export_obj(surf, "u_test_false.obj")
 # Good to have something here to put a breakpoint
 pass

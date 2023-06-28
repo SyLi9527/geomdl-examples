@@ -15,7 +15,7 @@ from geomdl import utilities
 from geomdl import exchange
 from geomdl import operations
 from geomdl import multi
-from geomdl.visualization import VisPlotly
+from geomdl.visualization import VisMPL
 
 
 # Fix file path
@@ -44,7 +44,7 @@ operations.translate(curves[0], c2tanvec, inplace=True)
 curves.sample_size = 100
 
 # Plot the control point polygon and the evaluated curve
-vis_comp = VisPlotly.VisCurve3D()
+vis_comp = VisMPL.VisCurve3D()
 curves.vis = vis_comp
 curves.render()
 
