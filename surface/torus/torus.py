@@ -19,7 +19,7 @@ import numpy as np
 os.chdir(os.path.dirname(os.path.realpath(__file__)))
 
 
-for i in range(59):
+for i in range(60):
     # Create a BSpline surface instance
     surf = NURBS.Surface()
 

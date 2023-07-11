@@ -62,7 +62,6 @@ points = [
     
 ]
 
-
 for i in range(len(points)):
     with open("ctrlpts/torus" + str(i + 1) + ".ctrlpts", "w") as f:
         for point in points[i]:
